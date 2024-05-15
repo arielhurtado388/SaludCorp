@@ -3,7 +3,7 @@
   --colorprimario: #316b83;
   --colorsecundario: #6d829950;
   --colorterciario: #8ca1a5;
-  --colorcuaternario: #d5bfbf;
+  --colorcuaternario: #a08a8a;
   --negro: #000;
   --blancoT: #ffffff;
   --blanco: #fff;
@@ -108,10 +108,14 @@ fieldset {
   }
 }
 .logo__texto {
+  font-size: 3rem;
   font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
 }
 .logo__texto:hover {
-  color: var(--colorprimario);
+  color: var(--colorcuaternario);
+  background-color: var(--blanco);
 }
 span {
   font-weight: 700;
@@ -173,6 +177,7 @@ span {
 .header__texto p {
   text-align: center;
   font-size: 1.75rem;
+  font-weight: bold;
   color: var(--blanco);
 }
 @media (min-width: 768px) {
@@ -239,12 +244,11 @@ span {
 .boton--secundario {
   border: 1px solid var(--negro);
   color: var(--negro);
-  background-color: var(--blanco);
 }
 .boton--secundario:hover,
 .busqueda__contenido button:hover {
   cursor: pointer;
-  border: 2px solid var(--colorcuaternario);
+  /* border: 2px solid var(--colorcuaternario); */
   color: var(--blanco);
   background-color: var(--colorcuaternario);
 }
@@ -280,8 +284,9 @@ span {
 }
 .busqueda__contenido button {
   background-color: transparent;
-  border: 2px solid var(--colorprimario);
+  border: 1px solid var(--negro);
   border-radius: 0.5rem;
+  padding: 1rem 2rem;
 }
 .busqueda__contenido button,
 .politica__item input {
@@ -409,7 +414,6 @@ span {
 }
 .entrada__titulo--enlace:hover {
   color: var(--colorcuaternario);
-  border: none;
 }
 @media (min-width: 768px) {
   .nuestroblog {
